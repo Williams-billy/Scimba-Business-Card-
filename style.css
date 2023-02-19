@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 20px;
+    font-family: arial;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 50px;
+    position: sticky;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: #a5a58d;
+    color: #691e06;
+    border-bottom: 8px solid #6b705c;
+    box-shadow: yellowgreen;
+    text-shadow: yellow;
+}
+
+.card::shadow{
+    color: turquoise;
+}
+
+.card div:hover{
+    cursor: pointer;
+    color: tomato;
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: green;}
+}
+
+.card {
+    height: fit-content;
+    width: 400px;
+    background-color: darkmagenta;
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
